@@ -65,10 +65,8 @@ temp = []
   hash.each do |seasons, holidays|
     puts "#{seasons.to_s.capitalize}:"
     hash[seasons].each do |holidays, supplies|
-      # first, manipulate the holiday symbols
       temp = holidays.to_s.split("_")
       temp.collect! {|item| item.capitalize!}
-      #then, manipulate the supply string
       puts "  #{temp.join(" ")}: #{supplies.join(", ")}"
       end
     end
