@@ -79,5 +79,4 @@ def all_holidays_with_bbq(holiday)
       end
   end
   holiday_arr
-
 end
